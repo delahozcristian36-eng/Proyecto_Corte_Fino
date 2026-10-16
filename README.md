@@ -4,7 +4,7 @@ CorteFino es un sistema de citas para barberías y salones que permite a los cli
 | Elias David Mojica Hernandez | Scrum Master | eliasmojicah14-prog | <br>
 | Jesus Manuel Castro Cardozo | Developer | jesuscastrorhlm-creator | <br>
 | Cristian Jose De la hoz Zapata | Developer | delahozcristian36-eng | <br>
-| Yerik Oswaldo Malvido Morales | Product Owner |  | <br>
+| Yerik Oswaldo Malvido Morales | Product Owner | oswaghub | <br>
 
 ## Cómo ejecutar el proyecto
 1. Clonar el repositorio con git clone y la URL del repo.
