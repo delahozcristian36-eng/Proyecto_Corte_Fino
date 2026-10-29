@@ -7,21 +7,20 @@ body {
 }
 
 /* Encabezado */
-.Cabezote {
+.encabezado {
   padding: 24px;
   color: white;
   background: #1C1C1C;
 }
 
 /* Contenedor principal */
-#cajaPrincipal {
+.contenedor-principal {
   width: 900px;
   margin: 0 auto;
 }
 
 /* Tarjetas de servicios */
-.Servicio_Card,
-.servicio2 {
+.tarjeta-servicio {
   float: left;
   width: 280px;
   margin-right: 16px;
@@ -32,7 +31,7 @@ body {
 }
 
 /* Botón para agendar */
-.BtnAgendar {
+.boton-agendar {
   padding: 10px 16px;
   color: #1C1C1C;
   background: #F2C14E;
@@ -41,7 +40,7 @@ body {
   font-size: 14px;
 }
 
-.BtnAgendar:hover {
+.boton-agendar:hover {
   background: white;
 }
 
