@@ -1,11 +1,5 @@
 
-/* Estilos generales */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #F3F1EA;
-}
-
+/* Variables de colores y medidas */
 :root {
   --color-fondo: #F3F1EA;
   --color-oscuro: #1C1C1C;
@@ -15,28 +9,68 @@ body {
   --espaciado: 16px;
 }
 
-#servicios {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
-  gap: 16px;
+/* Estilos generales */
+* {
+  box-sizing: border-box;
 }
 
-/* Encabezado */
-.encabezado {
-  padding: 24px;
-  color: white;
-  background: #1C1C1C;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-oscuro);
 }
 
-/* Contenedor principal */
 .contenedor-principal {
   width: min(100% - 32px, 960px);
   margin: 0 auto;
 }
-/* Tarjetas de servicios */
+
+/* Encabezado y navegación */
+.encabezado {
+  padding: 24px;
+  color: var(--color-blanco);
+  background: var(--color-oscuro);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaciado);
+  margin-top: var(--espaciado);
+}
+
+nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--color-boton);
+}
+
+/* Sección de servicios */
+#servicios {
+  margin: 32px 0;
+}
+
+#servicios h2 {
+  margin-bottom: 24px;
+}
+
+.lista-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 24px;
+}
+
+/* Tarjetas */
 .tarjeta-servicio {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   padding: var(--espaciado);
+  overflow: hidden;
   background: var(--color-blanco);
   border: 1px solid var(--color-borde);
   border-radius: 12px;
@@ -45,24 +79,43 @@ body {
 .tarjeta-servicio img {
   display: block;
   width: 100%;
-  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
 }
 
-/* Botón para agendar */
+.tarjeta-servicio h3 {
+  margin-bottom: 8px;
+}
+
 .boton-agendar {
+  align-self: flex-start;
+  margin-top: auto;
   padding: 10px 16px;
-  color: #1C1C1C;
-  background: #F2C14E;
+  color: var(--color-oscuro);
+  background: var(--color-boton);
   border: none;
   border-radius: 8px;
-  font-size: 14px;
+  cursor: pointer;
 }
 
 .boton-agendar:hover {
-  background: white;
+  background: #E0AD32;
 }
 
-/* Títulos */
-h2 {
-  color: #1C1C1C;
+/* Pie de página */
+.pie {
+  padding: 24px;
+  text-align: center;
+  color: var(--color-blanco);
+  background: var(--color-oscuro);
+}
+
+@media (max-width: 600px) {
+  .encabezado {
+    padding: 20px 16px;
+  }
+
+  .lista-servicios {
+    grid-template-columns: 1fr;
+  }
 }
