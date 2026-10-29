@@ -1,0 +1,51 @@
+
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F3F1EA;
+}
+
+/* Encabezado */
+.Cabezote {
+  padding: 24px;
+  color: white;
+  background: #1C1C1C;
+}
+
+/* Contenedor principal */
+#cajaPrincipal {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* Tarjetas de servicios */
+.Servicio_Card,
+.servicio2 {
+  float: left;
+  width: 280px;
+  margin-right: 16px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #D9D5C7;
+  border-radius: 12px;
+}
+
+/* Botón para agendar */
+.BtnAgendar {
+  padding: 10px 16px;
+  color: #1C1C1C;
+  background: #F2C14E;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.BtnAgendar:hover {
+  background: white;
+}
+
+/* Títulos */
+h2 {
+  color: #1C1C1C;
+}
