@@ -63,39 +63,49 @@
 </head>
 
 <body>
-    <div class=Cabezote>
+    <header class="Cabezote">
         <h1>CorteFino</h1>
         <h1>Agenda tu cita en la barbería</h1>
-    </div>
-    <div id=cajaPrincipal>
-        <br><br>
-        <h2>Servicios</h2>
-        <div class=Servicio_Card>
-            <img src="foto1.jpg">
-            <H3 style="color:red;font-size:18px">Corte clásico</H3>
-            <p style="color:gray">$25.000</p>
-            <p>30 minutos</p>
-            <button class=BtnAgendar>Agendar</button>
-        </div>
-        <div class=servicio2>
-            <img src="foto2.jpg">
-            <H3 style="color:red;font-size:18px">Corte + barba</H3>
-            <p style="color:gray">$40.000</p>
-            <p>50 minutos</p>
-            <button class=BtnAgendar>Agendar</button>
-        </div>
-        <div class=servicio2>
-            <img src="foto3.jpg">
-            <H3 style="color:red;font-size:18px">Cejas</H3>
-            <p style="color:gray">$8.000</p>
-            <p>10 minutos</p>
-            <button class=BtnAgendar>Agendar</button>
-        </div>
-        <br><br>
-    </div>
-    <div class=Cabezote>
-        <p style="color:white">CorteFino · Barranquilla</p>
-    </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+        </nav>
+    </header>
+
+    <main id="cajaPrincipal">
+        <section id="servicios">
+            <h2>Servicios</h2>
+
+            <article class="Servicio_Card">
+                <img src="foto1.jpg" alt="Corte clásico">
+                <h3 style="color:red;font-size:18px">Corte clásico</h3>
+                <p style="color:gray">$25.000</p>
+                <p>30 minutos</p>
+                <button class="BtnAgendar" type="button">Agendar</button>
+            </article>
+
+            <article class="servicio2">
+                <img src="foto2.jpg" alt="Corte con barba">
+                <h3 style="color:red;font-size:18px">Corte + barba</h3>
+                <p style="color:gray">$40.000</p>
+                <p>50 minutos</p>
+                <button class="BtnAgendar" type="button">Agendar</button>
+            </article>
+
+            <article class="servicio2">
+                <img src="foto3.jpg" alt="Perfilado de cejas">
+                <h3 style="color:red;font-size:18px">Cejas</h3>
+                <p style="color:gray">$8.000</p>
+                <p>10 minutos</p>
+                <button class="BtnAgendar" type="button">Agendar</button>
+            </article>
+        </section>
+    </main>
+
+    <footer class="Cabezote">
+        <p>CorteFino · Barranquilla</p>
+    </footer>
 </body>
 
 </html>
